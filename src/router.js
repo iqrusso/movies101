@@ -12,12 +12,12 @@ export default new Router({
       redirect: "/popular"
     },
     {
-      path: "/popular",
+      path: "/popular", // lista di TMDb
       component: List,
       props: { pageTitle: "Film popolari", listToGet: "popular", mode: "api" }
     },
     {
-      path: "/top-rated",
+      path: "/top-rated", // lista di TMDb
       component: List,
       props: {
         pageTitle: "Film più votati",
@@ -26,7 +26,7 @@ export default new Router({
       }
     },
     {
-      path: "/latest",
+      path: "/latest", // lista di TMDb
       component: List,
       props: {
         pageTitle: "Film recenti",
@@ -35,7 +35,7 @@ export default new Router({
       }
     },
     {
-      path: "/upcoming",
+      path: "/upcoming", // lista di TMDb
       component: List,
       props: { pageTitle: "Film in arrivo", listToGet: "upcoming", mode: "api" }
     },
@@ -48,7 +48,7 @@ export default new Router({
       component: List,
       props: {
         pageTitle: "Film preferiti",
-        listToGet: "favorites",
+        listToGet: "favorites", // collection su Firebase
         mode: "firebase"
       }
     },
@@ -57,7 +57,7 @@ export default new Router({
       component: List,
       props: {
         pageTitle: "Film guardati",
-        listToGet: "history",
+        listToGet: "history", // collection su Firebase
         mode: "firebase"
       }
     },
@@ -66,7 +66,7 @@ export default new Router({
       component: List,
       props: {
         pageTitle: "Film da guardare",
-        listToGet: "watchlist",
+        listToGet: "watchlist", // collection su Firebase
         mode: "firebase"
       }
     },
