@@ -1,6 +1,6 @@
 <template>
   <!-- la card può essere verticale o orizzontale, dipende
-  dalla proprisetà che è stata settata nel componente -->
+  dalla proprietà che è stata settata nel componente -->
   <div id="MovieCard">
     <v-card v-if="this.vertical" height="100%">
       <MovieCardImage :movie="movie" />
