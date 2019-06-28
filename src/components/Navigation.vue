@@ -65,7 +65,7 @@ export default {
           ]
         },
         secondChunk: {
-          subheader: "Liste",
+          subheader: "Collezioni",
           tiles: [
             { title: "Preferiti", icon: "favorite", route: "/favorites" },
             { title: "Cronologia", icon: "check_circle", route: "/history" },
