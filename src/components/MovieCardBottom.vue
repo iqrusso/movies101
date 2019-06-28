@@ -84,8 +84,7 @@ export default {
           iconAdd: "playlist_add",
           tooltipRemove: "Rimuovi dalla watchlist",
           tooltipAdd: "Aggiungi alla watchlist",
-          snackbarAdded: "Film aggiunto alla watchlist",
-          snackbarActive: false
+          snackbarAdded: "Film aggiunto alla watchlist"
         },
         {
           name: "history",
@@ -93,8 +92,7 @@ export default {
           iconAdd: "check_circle_outline",
           tooltipRemove: "Rimuovi dalla cronologia",
           tooltipAdd: "Aggiungi alla cronologia",
-          snackbarAdded: "Film aggiunto alla cronologia",
-          snackbarActive: false
+          snackbarAdded: "Film aggiunto alla cronologia"
         },
         {
           name: "favorites",
@@ -102,8 +100,7 @@ export default {
           iconAdd: "favorite_border",
           tooltipRemove: "Rimuovi dai preferiti",
           tooltipAdd: "Aggiungi ai preferiti",
-          snackbarAdded: "Film aggiunto ai preferiti",
-          snackbarActive: false
+          snackbarAdded: "Film aggiunto ai preferiti"
         }
       ]
     };
