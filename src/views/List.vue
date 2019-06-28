@@ -20,7 +20,7 @@ export default {
   props: {
     pageTitle: String, // l'intestazione da dare alla pagina
     listToGet: String, // la lista da chiedere
-    mode: String // se 'true' la lista va presa subito tramite API (e.g. popular, latest) altrimenti i film della lista vanno prima individuati in firebase (e.g. favorites, watchlist)
+    mode: String // se 'api' o 'search' la lista va presa subito tramite API (e.g. popular, latest), se 'firebase' i film della lista vanno prima individuati in firebase (e.g. favorites, watchlist)
   },
   data() {
     return {
