@@ -131,7 +131,15 @@ export default {
       // se l'utente dà una nuova valutazione,
       // aggiorniamo il dato userVote
       set(stars) {
-        this.userVote = stars;
+        if (stars != 0) {
+          this.userVote = stars;
+        } else {
+          // però se l'utente annulla il voto, va eliminato dal db
+          this.userVote = null;
+          db.collection("ratings")
+            .doc(String(this.movie.id))
+            .delete();
+        }
       }
     }
   },
@@ -139,11 +147,13 @@ export default {
     userVote() {
       // quando il dato userVote cambia, l'aggiornamento
       // viene scritto su firebase
-      db.collection("ratings")
-        .doc(String(this.movie.id))
-        .set({
-          rating: this.userVote
-        });
+      if (this.userVote !== null) {
+        db.collection("ratings")
+          .doc(String(this.movie.id))
+          .set({
+            rating: this.userVote
+          });
+      }
     }
   },
   methods: {
