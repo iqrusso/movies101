@@ -50,7 +50,7 @@ Se si richiede una lista di film (ad esempio i popolari), ogni oggetto-film avr�
 `"genre_ids": [12, 16, 35, 10751]`  
 Se invece si richiedono le informazioni su un singolo film, l'oggetto avrà una proprietà diversa:  
 `"genres":[ {"id":878,"name":"Fantascienza"}, {"id":28,"name":"Azione"} ]`  
-È evidente che nel secondo caso è più semplice recuperare i nomi dei generi, perché sono esplicitati. Invece nel secondo caso sarà necessario effettuare una "traduzione", cioè recuperare i nomi corrisponenti a quei numeri restituiti dall'API.
+È evidente che nel secondo caso è più semplice recuperare i nomi dei generi, perché sono esplicitati. Invece nel primo caso sarà necessario effettuare una "traduzione", cioè recuperare i nomi corrisponenti a quei numeri restituiti dall'API.
 
 In ogni caso, per elencare i generi le card fanno riferimento a un metodo `filterGenres()`, che nella fase di creazione del componente controlla se l'API ha restituito `genre_ids` o `genres`. Nel primo caso gli ID verranno confrontati con un "dizionario" preso da TMDb e salvato in Vue al momento dell'istanziazione; nel secondo caso da ogni oggetto dell'array verrà semplicemente presa la chiave `name`.
 
