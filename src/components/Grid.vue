@@ -16,7 +16,7 @@
         pb-3
         pr-3
       >
-        <MovieCard :movie="movie" vertical style="height: 100%" />
+        <MovieCard :movie="movie" vertical style="height: 100%" :key="index" />
       </v-flex>
       <Observer
         v-if="this.mode != 'firebase' && this.morePages"
