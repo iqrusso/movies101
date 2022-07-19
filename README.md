@@ -1,5 +1,5 @@
 # Movies 101
-Movies 101 è un'applicazione a singola pagina realizzata con *Vue.js* e *Vuetify*. I contenuti sono forniti dall'API di [The Movie Database](https://www.themoviedb.org/) (TMDb). Una demo è disponibile al link [movies101.tk](https://movies101.tk/).
+Movies 101 è un'applicazione a singola pagina realizzata con *Vue.js* e *Vuetify*. I contenuti sono forniti dall'API di [The Movie Database](https://www.themoviedb.org/) (TMDb). Una demo è disponibile a [questo link](https://movies101-iqr.firebaseapp.com).
 
 ## 1. Viste
 L'app alterna due viste:
